@@ -43,7 +43,7 @@ const speakers = [
     summary:
       "Learn why accessibility belongs at the center of modern web development. This session covers practical design choices that help create inclusive and user-friendly digital experiences.",
     image:
-      "https://unsplash.com/photos/woman-smiling-wearing-denim-jacket-TSZo17r3m0s",
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85",
     imageAlt: "Portrait of a woman with long dark hair",
     topics: [
       "Writing meaningful image alt text",
