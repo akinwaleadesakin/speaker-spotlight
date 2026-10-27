@@ -1,0 +1,264 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #15233c;
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+a {
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.event-header {
+  background: #111c32;
+  color: #ffffff;
+  padding: 26px max(6%, calc((100% - 1200px) / 2)) 76px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.brand-icon {
+  color: #c9fa73;
+  font-size: 20px;
+}
+
+.brand-light {
+  color: #b6c0d2;
+  font-weight: 500;
+}
+
+.event-tag {
+  color: #aebbd0;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 11px;
+}
+
+.hero {
+  max-width: 800px;
+  margin: 70px auto 0;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #7b86ff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+.hero .eyebrow {
+  color: #c9fa73;
+}
+
+.hero h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(42px, 7vw, 76px);
+  letter-spacing: -3px;
+  line-height: 1.08;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: #c9fa73;
+}
+
+.hero-description {
+  color: #b8c3d5;
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.event-details {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.event-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+}
+
+.detail-label {
+  color: #8f9db5;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.event-details strong {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.main-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 65px 28px 75px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading h2,
+.closing-banner h2 {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -1px;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.section-heading > p:last-child {
+  color: #778298;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 24px;
+}
+
+.closing-banner {
+  margin-top: 65px;
+  padding: 36px 25px;
+  border: 1px solid #e3e8f0;
+  border-radius: 18px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.closing-banner h2 {
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+.closing-banner > p:last-child {
+  color: #778298;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.site-footer {
+  background: #111c32;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #c9fa73;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer p {
+  color: #9ba9bf;
+  font-size: 11px;
+  margin: 12px 0 0;
+}
+
+@media (max-width: 950px) {
+  .speaker-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .event-header {
+    padding: 23px 20px 55px;
+  }
+
+  .brand {
+    font-size: 11px;
+  }
+
+  .hero {
+    margin-top: 55px;
+  }
+
+  .hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .event-details {
+    gap: 24px;
+    justify-content: flex-start;
+    max-width: 290px;
+    margin: 32px auto 0;
+  }
+
+  .event-details div {
+    width: 100%;
+  }
+
+  .main-content {
+    padding: 45px 18px 55px;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .speaker-image-wrapper {
+    height: 260px;
+  }
+
+  .closing-banner {
+    margin-top: 45px;
+  }
+}
